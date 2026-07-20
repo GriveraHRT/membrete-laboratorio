@@ -147,12 +147,12 @@
             // Function to generate the hosted absolute URL for the logo
             function getLogoUrl() {
                 if (window.location.protocol === 'file:') {
-                    return 'logo_cropped.png';
+                    return 'logo_transparent.png';
                 }
                 const origin = window.location.origin;
                 const pathname = window.location.pathname;
                 const dirPath = pathname.substring(0, pathname.lastIndexOf('/') + 1);
-                return `${origin}${dirPath}logo_cropped.png`;
+                return `${origin}${dirPath}logo_transparent.png`;
             }
 
             // Generate signature HTML structure
@@ -184,23 +184,23 @@
                 }
 
                 return `
-                    <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; line-height: 1.2; background-color: #ffffff; margin: 0; padding: 0; width: 410px; max-width: 410px;">
+                    <table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; line-height: 1.2; background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); background-repeat: repeat; margin: 0; padding: 0; width: 410px; max-width: 410px;">
                         <tr>
                             <!-- Logo Column (Vertically Centered) -->
-                            <td valign="middle" align="center" style="padding-right: 12px; padding-top: 2px; padding-bottom: 2px; width: 155px; vertical-align: middle;">
+                            <td valign="middle" align="center" bgcolor="#ffffff" style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); padding-right: 12px; padding-top: 6px; padding-bottom: 6px; width: 155px; vertical-align: middle;">
                                 <img src="${logoUrl}" alt="Hospital Regional de Talca Logo" width="150" height="63" style="display: block; border: 0; outline: none; width: 150px; height: auto; max-width: 150px;" />
                             </td>
                             <!-- Divider and Details Column -->
-                            <td valign="top" style="border-left: 1px dotted #878686; padding-left: 12px; padding-top: 2px; padding-bottom: 2px; font-family: Arial, Helvetica, sans-serif;">
+                            <td valign="top" bgcolor="#ffffff" style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); border-left: 1px dotted #878686; padding-left: 12px; padding-top: 6px; padding-bottom: 6px; font-family: Arial, Helvetica, sans-serif;">
                                 <div style="font-size: 14px; font-weight: bold; color: #000000; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif; line-height: 1.1; letter-spacing: 0.1px;">
                                     ${nombre}
                                 </div>
                                 ${cargoHTML}
                                 
                                 <!-- Dotted separator line -->
-                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; width: 100%; margin-top: 3px; margin-bottom: 4px;">
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff" style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); border-collapse: collapse; width: 100%; margin-top: 3px; margin-bottom: 4px;">
                                     <tr>
-                                        <td style="border-top: 1px dotted #878686; font-size: 0; line-height: 0; height: 1px;">&nbsp;</td>
+                                        <td bgcolor="#ffffff" style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); border-top: 1px dotted #878686; font-size: 0; line-height: 0; height: 1px;">&nbsp;</td>
                                     </tr>
                                 </table>
 
@@ -214,7 +214,7 @@
                         </tr>
                         <!-- Blank Spacer Row to separate vertical dotted line from bottom bar -->
                         <tr>
-                            <td colspan="2" height="10" style="font-size: 0; line-height: 0; height: 10px; padding: 0; margin: 0;">&nbsp;</td>
+                            <td colspan="2" height="10" bgcolor="#ffffff" style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); font-size: 0; line-height: 0; height: 10px; padding: 0; margin: 0;">&nbsp;</td>
                         </tr>
                         <!-- Bottom Dual Bar: Thicker (9px height) -->
                         <tr>
