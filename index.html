@@ -199,32 +199,37 @@
                 return `
                     <table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; line-height: 1.2; background-color: #ffffff; margin: 0; padding: 0; width: 410px; max-width: 410px;">
                         <tr>
+                            <!-- Logo Column (Vertically Centered) -->
                             <td valign="middle" align="center" bgcolor="#ffffff" style="background-color: #ffffff; padding-right: 12px; padding-top: 6px; padding-bottom: 6px; width: 155px; vertical-align: middle;">
                                 <img src="${logoUrl}" alt="Hospital Regional de Talca Logo" width="150" height="63" style="display: block; border: 0; outline: none; width: 150px; height: auto; max-width: 150px;" />
                             </td>
-                            <td valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border-left: 1px dotted #878686; padding-left: 12px; padding-top: 6px; padding-bottom: 6px; font-family: Arial, Helvetica, sans-serif;">
+                            <!-- Divider and Details Column -->
+                            <td valign="top" bgcolor="#ffffff" style="background-color: #ffffff; border-left: 1px dotted #888888; padding-left: 12px; padding-top: 6px; padding-bottom: 6px; font-family: Arial, Helvetica, sans-serif;">
                                 <div style="font-size: 14px; font-weight: bold; color: #000000; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif; line-height: 1.1; letter-spacing: 0.1px;">
                                     ${nombre}
                                 </div>
                                 ${cargoHTML}
                                 
+                                <!-- Dotted separator line -->
                                 <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff" style="background-color: #ffffff; border-collapse: collapse; width: 100%; margin-top: 3px; margin-bottom: 4px;">
                                     <tr>
-                                        <td bgcolor="#ffffff" style="background-color: #ffffff; border-top: 1px dotted #878686; font-size: 0; line-height: 0; height: 1px;">&nbsp;</td>
+                                        <td bgcolor="#ffffff" style="background-color: #ffffff; border-top: 1px dotted #888888; font-size: 0; line-height: 0; height: 1px;">&nbsp;</td>
                                     </tr>
                                 </table>
 
-                                <div style="font-size: 11px; color: #878686; font-family: Arial, Helvetica, sans-serif; line-height: 1.25;">
-                                    <span style="display: block; margin-bottom: 1px; color: #878686;">Unidad Laboratorio</span>
+                                <div style="font-size: 11px; color: #4a4a4a; font-family: Arial, Helvetica, sans-serif; line-height: 1.25;">
+                                    <span style="display: block; margin-bottom: 1px; color: #4a4a4a;">Unidad Laboratorio</span>
                                     ${phoneHTML}
                                     <span style="display: block; margin-bottom: 1px;">Uno norte #1951, Talca - Región del Maule</span>
-                                    <a href="http://www.hospitaldetalca.cl" target="_blank" style="color: #878686; text-decoration: none; display: block;">www.hospitaldetalca.cl</a>
+                                    <a href="http://www.hospitaldetalca.cl" target="_blank" style="color: #4a4a4a; text-decoration: none; display: block;">www.hospitaldetalca.cl</a>
                                 </div>
                             </td>
                         </tr>
+                        <!-- Blank Spacer Row to separate vertical dotted line from bottom bar -->
                         <tr>
                             <td colspan="2" height="10" bgcolor="#ffffff" style="background-color: #ffffff; font-size: 0; line-height: 0; height: 10px; padding: 0; margin: 0;">&nbsp;</td>
                         </tr>
+                        <!-- Bottom Dual Bar: Thicker (9px height) -->
                         <tr>
                             <td height="9" bgcolor="#0067ac" style="background-color: #0067ac; height: 9px; font-size: 0; line-height: 0; padding: 0; margin: 0;">&nbsp;</td>
                             <td height="9" bgcolor="#e43439" style="background-color: #e43439; height: 9px; font-size: 0; line-height: 0; padding: 0; margin: 0;">&nbsp;</td>
