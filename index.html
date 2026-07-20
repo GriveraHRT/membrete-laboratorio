@@ -167,7 +167,7 @@
                 let cargoHTML = '';
                 if (cargo) {
                     cargoHTML = `
-                        <div style="font-size: 13px; font-weight: bold; color: #000000; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif; margin-top: 2px;">
+                        <div style="font-size: 10.5px; font-weight: bold; color: #000000; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif; line-height: 1.15; margin-top: 2px; letter-spacing: 0.1px;">
                             ${cargo}
                         </div>
                     `;
@@ -176,46 +176,50 @@
                 // Format phone line HTML
                 let phoneHTML = '';
                 if (fono && minsal) {
-                    phoneHTML = `<span style="display: block; margin-bottom: 2px;">Fono: ${fono} / Minsal: ${minsal}</span>`;
+                    phoneHTML = `<span style="display: block; margin-bottom: 1px;">Fono: ${fono} / Minsal: ${minsal}</span>`;
                 } else if (fono) {
-                    phoneHTML = `<span style="display: block; margin-bottom: 2px;">Fono: ${fono}</span>`;
+                    phoneHTML = `<span style="display: block; margin-bottom: 1px;">Fono: ${fono}</span>`;
                 } else if (minsal) {
-                    phoneHTML = `<span style="display: block; margin-bottom: 2px;">Minsal: ${minsal}</span>`;
+                    phoneHTML = `<span style="display: block; margin-bottom: 1px;">Minsal: ${minsal}</span>`;
                 }
 
                 return `
-                    <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; line-height: 1.4; background-color: #ffffff; margin: 0; padding: 0; width: 480px; max-width: 480px;">
+                    <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; line-height: 1.2; background-color: #ffffff; margin: 0; padding: 0; width: 410px; max-width: 410px;">
                         <tr>
                             <!-- Logo Column (Vertically Centered) -->
-                            <td valign="middle" align="center" style="padding-right: 15px; padding-top: 5px; padding-bottom: 10px; width: 175px; vertical-align: middle;">
-                                <img src="${logoUrl}" alt="Hospital Regional de Talca Logo" width="175" height="74" style="display: block; border: 0; outline: none; width: 175px; height: auto; max-width: 175px;" />
+                            <td valign="middle" align="center" style="padding-right: 12px; padding-top: 2px; padding-bottom: 2px; width: 155px; vertical-align: middle;">
+                                <img src="${logoUrl}" alt="Hospital Regional de Talca Logo" width="150" height="63" style="display: block; border: 0; outline: none; width: 150px; height: auto; max-width: 150px;" />
                             </td>
                             <!-- Divider and Details Column -->
-                            <td valign="top" style="border-left: 1px dotted #878686; padding-left: 15px; padding-top: 5px; padding-bottom: 10px; font-family: Arial, Helvetica, sans-serif;">
-                                <div style="font-size: 16px; font-weight: bold; color: #000000; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif; letter-spacing: 0.2px;">
+                            <td valign="top" style="border-left: 1px dotted #878686; padding-left: 12px; padding-top: 2px; padding-bottom: 2px; font-family: Arial, Helvetica, sans-serif;">
+                                <div style="font-size: 14px; font-weight: bold; color: #000000; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif; line-height: 1.1; letter-spacing: 0.1px;">
                                     ${nombre}
                                 </div>
                                 ${cargoHTML}
                                 
-                                <!-- Dotted separator -->
-                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; width: 100%; margin-top: 4px; margin-bottom: 6px;">
+                                <!-- Dotted separator line -->
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; width: 100%; margin-top: 3px; margin-bottom: 4px;">
                                     <tr>
                                         <td style="border-top: 1px dotted #878686; font-size: 0; line-height: 0; height: 1px;">&nbsp;</td>
                                     </tr>
                                 </table>
 
-                                <div style="font-size: 12px; color: #878686; font-family: Arial, Helvetica, sans-serif; line-height: 1.45;">
-                                    <span style="font-weight: bold; display: block; margin-bottom: 2px; color: #878686;">Unidad Laboratorio</span>
+                                <div style="font-size: 11px; color: #878686; font-family: Arial, Helvetica, sans-serif; line-height: 1.25;">
+                                    <span style="display: block; margin-bottom: 1px; color: #878686;">Unidad Laboratorio</span>
                                     ${phoneHTML}
-                                    <span style="display: block; margin-bottom: 2px;">Uno norte #1951, Talca - Región del Maule</span>
+                                    <span style="display: block; margin-bottom: 1px;">Uno norte #1951, Talca - Región del Maule</span>
                                     <a href="http://www.hospitaldetalca.cl" target="_blank" style="color: #878686; text-decoration: none; display: block;">www.hospitaldetalca.cl</a>
                                 </div>
                             </td>
                         </tr>
-                        <!-- Bottom Dual Bar: Blue ends at vertical dotted line, Red starts at vertical dotted line -->
+                        <!-- Blank Spacer Row to separate vertical dotted line from bottom bar -->
                         <tr>
-                            <td height="6" bgcolor="#0067ac" style="background-color: #0067ac; height: 6px; font-size: 0; line-height: 0; padding: 0; margin: 0;">&nbsp;</td>
-                            <td height="6" bgcolor="#e43439" style="background-color: #e43439; height: 6px; font-size: 0; line-height: 0; padding: 0; margin: 0;">&nbsp;</td>
+                            <td colspan="2" height="10" style="font-size: 0; line-height: 0; height: 10px; padding: 0; margin: 0;">&nbsp;</td>
+                        </tr>
+                        <!-- Bottom Dual Bar: Thicker (9px height) -->
+                        <tr>
+                            <td height="9" bgcolor="#0067ac" style="background-color: #0067ac; height: 9px; font-size: 0; line-height: 0; padding: 0; margin: 0;">&nbsp;</td>
+                            <td height="9" bgcolor="#e43439" style="background-color: #e43439; height: 9px; font-size: 0; line-height: 0; padding: 0; margin: 0;">&nbsp;</td>
                         </tr>
                     </table>
                 `;
