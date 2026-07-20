@@ -184,27 +184,27 @@
                 }
 
                 return `
-                    <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; line-height: 1.4; background-color: #ffffff; margin: 0; padding: 0; width: 620px;">
+                    <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; line-height: 1.4; background-color: #ffffff; margin: 0; padding: 0; width: 480px; max-width: 480px;">
                         <tr>
-                            <!-- Logo Column -->
-                            <td valign="top" style="padding-right: 15px; padding-top: 5px; padding-bottom: 5px; width: 180px;">
-                                <img src="${logoUrl}" alt="Hospital Regional de Talca Logo" width="178" height="75" style="display: block; border: 0; outline: none; width: 178px; height: 75px; max-width: 178px; max-height: 75px;" />
+                            <!-- Logo Column (Vertically Centered) -->
+                            <td valign="middle" align="center" style="padding-right: 15px; padding-top: 5px; padding-bottom: 10px; width: 175px; vertical-align: middle;">
+                                <img src="${logoUrl}" alt="Hospital Regional de Talca Logo" width="175" height="74" style="display: block; border: 0; outline: none; width: 175px; height: auto; max-width: 175px;" />
                             </td>
                             <!-- Divider and Details Column -->
-                            <td valign="top" style="border-left: 1px dotted #878686; padding-left: 15px; padding-top: 5px; padding-bottom: 5px; font-family: Arial, Helvetica, sans-serif;">
-                                <div style="font-size: 17px; font-weight: bold; color: #000000; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif;">
+                            <td valign="top" style="border-left: 1px dotted #878686; padding-left: 15px; padding-top: 5px; padding-bottom: 10px; font-family: Arial, Helvetica, sans-serif;">
+                                <div style="font-size: 16px; font-weight: bold; color: #000000; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif; letter-spacing: 0.2px;">
                                     ${nombre}
                                 </div>
                                 ${cargoHTML}
                                 
                                 <!-- Dotted separator -->
-                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; width: 100%; margin-top: 5px; margin-bottom: 5px;">
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; width: 100%; margin-top: 4px; margin-bottom: 6px;">
                                     <tr>
                                         <td style="border-top: 1px dotted #878686; font-size: 0; line-height: 0; height: 1px;">&nbsp;</td>
                                     </tr>
                                 </table>
 
-                                <div style="font-size: 12.5px; color: #878686; font-family: Arial, Helvetica, sans-serif;">
+                                <div style="font-size: 12px; color: #878686; font-family: Arial, Helvetica, sans-serif; line-height: 1.45;">
                                     <span style="font-weight: bold; display: block; margin-bottom: 2px; color: #878686;">Unidad Laboratorio</span>
                                     ${phoneHTML}
                                     <span style="display: block; margin-bottom: 2px;">Uno norte #1951, Talca - Región del Maule</span>
@@ -212,16 +212,10 @@
                                 </div>
                             </td>
                         </tr>
-                        <!-- Bottom Dual Bar -->
+                        <!-- Bottom Dual Bar: Blue ends at vertical dotted line, Red starts at vertical dotted line -->
                         <tr>
-                            <td colspan="2" style="padding-top: 10px;">
-                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; width: 100%; line-height: 0; font-size: 0;">
-                                    <tr>
-                                        <td width="40%" height="6" bgcolor="#0067ac" style="background-color: #0067ac; height: 6px; font-size: 0; line-height: 0; padding: 0; margin: 0;">&nbsp;</td>
-                                        <td width="60%" height="6" bgcolor="#e43439" style="background-color: #e43439; height: 6px; font-size: 0; line-height: 0; padding: 0; margin: 0;">&nbsp;</td>
-                                    </tr>
-                                </table>
-                            </td>
+                            <td height="6" bgcolor="#0067ac" style="background-color: #0067ac; height: 6px; font-size: 0; line-height: 0; padding: 0; margin: 0;">&nbsp;</td>
+                            <td height="6" bgcolor="#e43439" style="background-color: #e43439; height: 6px; font-size: 0; line-height: 0; padding: 0; margin: 0;">&nbsp;</td>
                         </tr>
                     </table>
                 `;
